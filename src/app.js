@@ -31,7 +31,7 @@ app.get('/articles/:article_id', (req, res, next) => {
         style: article.style,
         content: article.content,
         date_published: new Date(article.date_published),
-      })))
+        })))
     })
     .catch(next)
 })

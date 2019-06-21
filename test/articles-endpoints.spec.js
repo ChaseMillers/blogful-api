@@ -67,7 +67,7 @@ describe('Articles Endpoints', function() {
       const expectedArticle = testArticles[articleId - 1]
       return supertest(app)
         .get(`/articles/${articleId}`)
-        .expect(500, expectedArticle)
+        .expect(200, expectedArticle)
     })
   })
 })
